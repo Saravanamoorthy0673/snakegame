@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#home, #gameScreen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#home {
+  display: flex;
+  padding: 40px 60px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+#home .emoji {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+#home h1 {
+  font-size: 3rem;
+  color: #ff79c6;
+  margin-bottom: 10px;
+}
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+#home button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#home button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ee0979;
+}
+#gameScreen {
+  position: relative;
+  color: #fff;
+}
+#gameTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+canvas {
+  background: #222;
+  border: 6px solid #ff79c6;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #ff79c6;
+  margin-bottom: 15px;
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.controls button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #00c6ff;
+}
+#score {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#gameOverPanel {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #ff79c6;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #ff79c6;
+  text-align: center;
+  z-index: 10;
+  color: white;
+}
+#gameOverPanel h2 {
+  color: #ff4d6d;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+#finalScore {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+#gameOverPanel button, .homeBtn {
+  padding: 10px 25px;
+  background: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+}
+#gameOverPanel button:hover, .homeBtn:hover {
+  background: #732d91;
+  box-shadow: 0 0 10px #8e44ad;
+}
