@@ -136,3 +136,38 @@ canvas {
   background: #732d91;
   box-shadow: 0 0 10px #8e44ad;
 }
+.mobile-controls {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mobile-controls button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin: 5px;
+  background: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .mobile-controls {
+    display: flex;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+canvas {
+  width: 90vw;
+  height: 90vw;
+  max-width: 400px;
+  max-height: 400px;
+}

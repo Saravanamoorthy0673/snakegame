@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Snake Game - Play</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,6 +18,16 @@
       <button onclick="resetGame()">Retry</button>
       
     </div>
+    <!-- Mobile Touch Controls -->
+<div class="mobile-controls">
+  <button onclick="changeDirection('up')">⬆️</button>
+  <div>
+    <button onclick="changeDirection('left')">⬅️</button>
+    <button onclick="changeDirection('down')">⬇️</button>
+    <button onclick="changeDirection('right')">➡️</button>
+  </div>
+</div>
+
 
     <div id="score">Score: 0</div>
 
@@ -26,6 +38,8 @@
       <a href="index.html"><button class="homeBtn">Home</button></a>
     </div>
   </div>
+
+  
 
   <audio id="eatSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
   <audio id="gameOverSound" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
